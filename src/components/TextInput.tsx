@@ -25,6 +25,8 @@ function TextInputRoot({ children }: TextInputRootProps) {
   );
 }
 
+TextInputRoot.displayName = 'TextInputs.Root';
+
 function TextInputIcon({ children }: TextInputIconProps) {
   return (
     <Slot className="w-6 h-6 text-gray-400">
@@ -32,6 +34,8 @@ function TextInputIcon({ children }: TextInputIconProps) {
     </Slot>
   )
 }
+
+TextInputIcon.displayName = 'TextInputs.Icon';
 
 function TextInput(props: TextInputProps) {
   return (
@@ -41,6 +45,8 @@ function TextInput(props: TextInputProps) {
     />
   );
 }
+
+TextInput.displayName = 'TextInputs.Input';
 
 export const TextInputs = {
   Root: TextInputRoot,
